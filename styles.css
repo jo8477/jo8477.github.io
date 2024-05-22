@@ -11,10 +11,11 @@ body, html {
 }
 
 .container {
-    width: 80vw;
-    height: 45vw; /* 16:9 비율 유지 */
+    width: 85vw;
+    height: 48vw; /* 16:9 비율 유지 */
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
 }
@@ -29,12 +30,12 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 2.5em;
     color: #333;
 }
 
 #datetime {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #555;
     margin-top: 10px;
 }
@@ -43,20 +44,19 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 10px;
+    padding: 20px;
     flex: 1 1 auto;
-    overflow-y: auto;
 }
 
 section {
     flex: 1;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 section h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     color: #444;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
@@ -69,9 +69,10 @@ ul {
 ul li {
     background-color: #f9f9f9;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    font-size: 1.3em;
 }
 
 footer {
