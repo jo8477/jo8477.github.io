@@ -54,6 +54,10 @@ section {
     margin: 0 50px;
 }
 
+.schedule {
+    margin-right: 10px; /* 주요일정과 공지사항 사이에 간격 추가 */
+}
+
 section h2 {
     font-size: 2em;
     color: #444;
@@ -61,12 +65,13 @@ section h2 {
     text-align: center;
 }
 
-.schedule .day {
-    margin-bottom: 10px;
+.schedule .day, .announcements .announcement, .announcements .today-schedule {
+    flex: 1;
+    margin-bottom: 5px;
 }
 
-.schedule .day h3 {
-    font-size: 1.5em;
+.schedule .day h3, .today-schedule h2 {
+    font-size: 1.7em;
     color: #333;
     margin-bottom: 5px;
 }
@@ -83,10 +88,13 @@ ul li {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 1.3em;
+    font-size: 1.5em; /* 글씨 크기를 더 크게 */
+    display: flex;
+    align-items: center;
 }
-ul li p {
-    font-size: 1.8em
+
+#today-schedule-list li {
+    font-size: 2.5em; /* 금일 일정의 글씨 크기를 1.8em로 조정 */
 }
 
 footer {
