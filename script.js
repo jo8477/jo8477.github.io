@@ -15,6 +15,19 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('datetime').textContent = formattedDateTime;
     }
     
+    function updateTodaySchedule() {
+        const now = new Date();
+        const todayDay = now.toLocaleDateString('ko-KR', { weekday: 'long' });
+        const scheduleElements = document.querySelectorAll('.schedule .day');
+        scheduleElements.forEach(dayElement => {
+            if (dayElement.getAttribute('data-day') === todayDay) {
+                const todayScheduleList = document.getElementById('today-schedule-list');
+                todayScheduleList.innerHTML = dayElement.querySelector('ul').innerHTML;
+            }
+        });
+    }
+
     updateDateTime();
+    updateTodaySchedule();
     setInterval(updateDateTime, 1000); // 매초 업데이트
 });
