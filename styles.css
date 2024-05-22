@@ -85,6 +85,9 @@ ul li {
     border-radius: 4px;
     font-size: 1.3em;
 }
+ul li p {
+    font-size: 1.8em
+}
 
 footer {
     text-align: center;
