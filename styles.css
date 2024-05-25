@@ -12,7 +12,7 @@ body, html {
 
 .container {
     width: 95vw;
-    height: 50vw; /* 16:9 비율 유지 50->55*/
+    height: 46vw; /* 16:9 비율 유지 50->55*/
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
