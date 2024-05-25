@@ -30,4 +30,5 @@ document.addEventListener("DOMContentLoaded", function() {
     updateDateTime();
     updateTodaySchedule();
     setInterval(updateDateTime, 1000); // 매초 업데이트
+    setInterval(updateTodaySchedule, 10800000); // 3시간마다 업데이트
 });
